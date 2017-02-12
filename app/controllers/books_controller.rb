@@ -1,7 +1,8 @@
 class BooksController < ApplicationController
   def Index
     @books = Book.all
-  end 
+    respond_to :html, :text 
+  end
 
 
 end
