@@ -1,2 +1,3 @@
-
-<%= Book.all %> 
+<% @books.each do |b| %>
+<%= b.title %>: <%= b.author %>
+<% end %>

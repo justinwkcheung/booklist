@@ -1,1 +1,4 @@
-<h1>I love books....</h1>
+<% @books.each do |b| %>
+<%= b.title %>
+<%= b.author %>
+<% end %> 
